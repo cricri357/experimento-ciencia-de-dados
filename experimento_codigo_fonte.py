@@ -3,9 +3,11 @@ import csv
 
 # valores entre 100 e 1000 saltos de 100
 TAMANHOS_MB = range(100, 1001, 100)
-REPETICOES = 100
+REPETICOES = 1
 
-ARQUIVO_SAIDA = "resultados_windows.csv"
+SISTEMA = "sistema"
+
+ARQUIVO_SAIDA = f"resultados_{SISTEMA}.csv"
 
 with open(ARQUIVO_SAIDA, "w", newline="", encoding="utf-8") as arquivo:
 
