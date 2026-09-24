@@ -7,7 +7,7 @@ REPETICOES = 1
 
 SISTEMA = "sistema"
 
-ARQUIVO_SAIDA = f"resultados_{SISTEMA}.csv"
+ARQUIVO_SAIDA = f"resultados/resultados_{SISTEMA}.csv"
 
 with open(ARQUIVO_SAIDA, "w", newline="", encoding="utf-8") as arquivo:
 
