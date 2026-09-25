@@ -3,9 +3,9 @@ import csv
 
 # valores entre 100 e 1000 saltos de 100
 TAMANHOS_MB = range(100, 1001, 100)
-REPETICOES = 1
+REPETICOES = 100
 
-SISTEMA = "sistema"
+SISTEMA = "linux"
 
 ARQUIVO_SAIDA = f"resultados/resultados_{SISTEMA}.csv"
 
