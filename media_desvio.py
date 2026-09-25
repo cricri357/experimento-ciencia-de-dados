@@ -17,21 +17,28 @@ with open(ARQUIVO_SAIDA, "w", newline="", encoding="utf-8") as arquivo:
     escritor.writerow([
         "bloco_MB",
         "operacao",
-        "media"
+        "media",
+        "desvio_padrao"
         ])
 
     for mb in TAMANHOS_MB: # percorre os blocos de memória
 
-        for operacao in OPERACOES:
+        for operacao in OPERACOES: # percorre cada tipo de operação
 
             media = LINUX.loc[LINUX["bloco_MB"] == mb, operacao].mean()
+            desvio = LINUX.loc[LINUX["bloco_MB"] == mb, operacao].std()
 
-            print(media)
+            print(
+                f"bloco_MB:{mb}",
+                f"operacao:{operacao}", 
+                f"media:{media:.6f}", 
+                f"desvio:{desvio:.6f}")
 
             escritor.writerow([
                 mb,
                 operacao,
-                f"{media:.6f}"
+                f"{media:.6f}",
+                f"{desvio:.6f}"
             ])
 
         
