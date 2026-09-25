@@ -5,7 +5,7 @@ import csv
 TAMANHOS_MB = range(100, 1001, 100)
 REPETICOES = 100
 
-SISTEMA = "sistema"
+SISTEMA = "linux"
 
 ARQUIVO_SAIDA = f"resultados/resultados_{SISTEMA}.csv"
 
