@@ -1,4 +1,4 @@
-bloco_MB,operacao,media_linux,media_windows,desvio_linux,desvio_windows
+bloco_MB,operacao,media_LINUX,media_WINDOWS,desvio_LINUX,desvio_WINDOWS
 100,alloc_ms,42.004934,19.851287,11.521898,5.880462
 100,write_ms,58.347714,56.880336,14.256822,5.931256
 100,read_ms,253.044000,343.006805,6.342608,21.460272

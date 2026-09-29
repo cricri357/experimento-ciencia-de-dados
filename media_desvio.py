@@ -17,10 +17,10 @@ with open(ARQUIVO_SAIDA, "w", newline="", encoding="utf-8") as arquivo:
     escritor.writerow([
         "bloco_MB",
         "operacao",
-        "media_linux",
-        "media_windows",
-        "desvio_linux",
-        "desvio_windows"
+        "media_LINUX",
+        "media_WINDOWS",
+        "desvio_LINUX",
+        "desvio_WINDOWS"
         ])
 
     # csv do linux
@@ -36,10 +36,10 @@ with open(ARQUIVO_SAIDA, "w", newline="", encoding="utf-8") as arquivo:
             print(
                 f"bloco_MB:{mb}",
                 f"operacao:{operacao}", 
-                f"media_linux:{media_l:.6f}", 
-                f"media_windows:{media_w:.6f}", 
-                f"desvio_linux:{desvio_l:.6f}", 
-                f"desvio_windows:{desvio_w:.6f}")
+                f"media_LINUX:{media_l:.6f}", 
+                f"media_WINDOWS:{media_w:.6f}", 
+                f"desvio_LINUX:{desvio_l:.6f}", 
+                f"desvio_WINDOWS:{desvio_w:.6f}")
 
             escritor.writerow([
                 mb,
