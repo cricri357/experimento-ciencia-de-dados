@@ -56,5 +56,5 @@ for operacao in OPERACOES:
 
     plt.tight_layout()
     plt.savefig(f"resultados/grafico_{operacao}.png")
+    print(f"Salvo: {operacao}")
 
-plt.show()
