@@ -45,7 +45,7 @@ with open(ARQUIVO_SAIDA, "w", newline="", encoding="utf-8") as arquivo:
                 mb,
                 operacao,
                 f"{media_l:.6f}",
-                f"{media_l:.6f}",
+                f"{media_w:.6f}",
                 f"{desvio_l:.6f}",
                 f"{desvio_w:.6f}"
             ])
